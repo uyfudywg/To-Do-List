@@ -99,6 +99,7 @@ ul.todo-items{
 
 i{
   font-size: 20px;
+  background-color: #FFF;
 }
 .mrt{
   margin-left: auto;
@@ -126,9 +127,6 @@ i{
 .filter-button.active {
   color:white;
   background-color: #08337c;
-  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
-  /* background-color:  #1f52ac; */
-  /* box-shadow: 0 4px 15px rgba(102, 51, 153, 0.75); */
 }
 
 @media (max-width: 400px) {
