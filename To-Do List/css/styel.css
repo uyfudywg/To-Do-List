@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #1c1b1d 0%, #08337c 100%);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  height: 100vh;
+  align-items: center;
+}
+  
+  
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 30px;
+}  
+.add-List{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.add-List .add-input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 85%;
+  
+}
+
+ul.todo-items{
+  max-height: 300px;
+  overflow-y: auto;
+  
+  
+}
+.btn-add {
+  background: linear-gradient(to right, #1c1b1d 0%, #08337c 100%);
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+  padding: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.filters {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.filter-button {
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.item {
+  background: #FFF;
+  margin: 8px 10px;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.checkbox {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+i{
+  font-size: 20px;
+}
+.mrt{
+  margin-left: auto;
+  display: flex;
+}
+
+.delete-button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.updata-button {
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: dimgrey;
+} 
+
+.filter-button.active {
+  color:white;
+  background-color: #08337c;
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  /* background-color:  #1f52ac; */
+  /* box-shadow: 0 4px 15px rgba(102, 51, 153, 0.75); */
+}
+
+@media (max-width: 400px) {
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .btn-add, .add-input{
+      font-size: 14px;
+  }
+  .add-input {
+    margin-right: 0;
+  }
+
+}
+  
