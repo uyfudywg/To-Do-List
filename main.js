@@ -27,7 +27,6 @@ function addlist(){
 function addTodo() {
     if (add_input.value !== '') {
         const todo = {
-            // id: Date.now(),
             name: add_input.value,
             completed: false
         };
